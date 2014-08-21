@@ -26,8 +26,9 @@ module Mbti
       @lifestyle = lifestyle
     end
     
-    # Returns true if the type has a tendancy towards extraversion.
-    # Returns false if the type does not.
+    # Checks if the type will have the extraverted trait.
+    #
+    # @return [boolean] if the trait is extraverted
     def extraverted?
       if @attitude < 0
         true
@@ -36,8 +37,9 @@ module Mbti
       end
     end
     
-    # Returns true if the type has a tendancy towards introversion.
-    # Returns false if the type does not.
+    # Checks if the type will have the introverted trait.
+    #
+    # @return [boolean] if the trait is introverted
     def introverted?
       if @attitude > 0
         true
@@ -46,8 +48,9 @@ module Mbti
       end
     end
     
-    # Returns true if the type has a tendancy towards intuition.
-    # Returns false if the type does not.
+    # Checks if the type will have the intuitive trait.
+    #
+    # @return [boolean] if the trait is intuitive
     def intuitive?
       if @perceiving_function < 0
         true
@@ -56,8 +59,9 @@ module Mbti
       end
     end
     
-    # Returns true if the type has a tendancy towards observation.
-    # Returns false if the type does not.
+    # Checks if the type will have the observant trait.
+    #
+    # @return [boolean] if the trait is observant
     def observant?
       if @perceiving_function > 0
         true
@@ -66,8 +70,9 @@ module Mbti
       end
     end
     
-    # Returns true if the type has a tendancy towards thinking.
-    # Returns false if the type does not.
+    # Checks if the type will have the thinking trait.
+    #
+    # @return [boolean] if the trait is thinking
     def thinking?
       if @judging_function < 0
         true
@@ -76,8 +81,9 @@ module Mbti
       end
     end
     
-    # Returns true if the type has a tendancy towards feeling.
-    # Returns false if the type does not.
+    # Checks if the type will have the feeling trait.
+    #
+    # @return [boolean] if the trait is feeling
     def feeling?
       if @judging_function > 0
         true
@@ -86,8 +92,9 @@ module Mbti
       end
     end
     
-    # Returns true if the type has a tendancy towards judging.
-    # Returns false if the type does not.
+    # Checks if the type will have the judging trait.
+    #
+    # @return [boolean] if the trait is judging
     def judging?
       if @lifestyle < 0
         true
@@ -96,8 +103,9 @@ module Mbti
       end
     end
     
-    # Returns true if the type has a tendancy towards perceiving.
-    # Returns false if the type does not.
+    # Checks if the type will have the perceiving trait.
+    #
+    # @return [boolean] if the trait is perceiving
     def perceiving?
       if @lifestyle > 0
         true
