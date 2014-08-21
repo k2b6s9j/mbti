@@ -3,6 +3,14 @@ module Mbti
   # An instance of this class will provide proper representation of a single Myers-Briggs personality type.
   class Type
     
+    # @!attribute attitude
+    #   @return [Integer] representation of the attitude trait of the type
+    # @!attribute perceiving_function
+    #   @return [Integer] representation of the perceiving function trait of the type
+    # @!attribute perceiving_function
+    #   @return [Integer] representation of the judguing function trait of the type
+    # @!attribute lifestyle
+    #   @return [Integer] representation of the lifestyle trait of the type
     attr_accessor :attitude, :perceiving_function, :judging_function, :lifestyle
     
     # Creates an instance of the Type class
