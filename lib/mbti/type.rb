@@ -7,7 +7,7 @@ module Mbti
     #   @return [Integer] representation of the attitude trait of the type
     # @!attribute perceiving_function
     #   @return [Integer] representation of the perceiving function trait of the type
-    # @!attribute perceiving_function
+    # @!attribute judging_function
     #   @return [Integer] representation of the judguing function trait of the type
     # @!attribute lifestyle
     #   @return [Integer] representation of the lifestyle trait of the type
