@@ -26,6 +26,8 @@ module Mbti
       @lifestyle = lifestyle
     end
     
+    # @!group Type Trait Detection Methods
+    
     # Checks if the type will have the extraverted trait.
     #
     # @return [boolean] if the trait is extraverted
@@ -113,6 +115,8 @@ module Mbti
         false
       end
     end
+    
+    # @!endgroup
 
   end
 
