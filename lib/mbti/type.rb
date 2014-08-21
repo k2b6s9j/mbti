@@ -19,11 +19,15 @@ module Mbti
     # @param [Integer] perceiving_function The scale representing the perceiving function trait of the type.
     # @param [Integer] judging_function The scale representing the judging function trait of the type.
     # @param [Integer] lifestyle The scale representing the lifestyle trait of the type.
+    #
+    # @param [Mbti::Type] the instance of {Mbti::Type} created
     def initialize(attitude, perceiving_function, judging_function, lifestyle)
       @attitude = attitude
       @perceiving_function = perceiving_function
       @judging_function = judging_function
       @lifestyle = lifestyle
+      
+      self
     end
     
     # @!group Type Trait Detection Methods
