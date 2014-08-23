@@ -20,6 +20,8 @@ module Mbti
     # @param [Numeric, Symbol] judging_function The scale representing the judging function trait of the type.
     # @param [Numeric, Symbol] lifestyle The scale representing the lifestyle trait of the type.
     #
+    # @raise [StandardError] when the type cannot be properly created
+    #
     # @return [Mbti::Type] the instance of {Mbti::Type} created
     def initialize(attitude, perceiving_function, judging_function, lifestyle)
       case attitude
