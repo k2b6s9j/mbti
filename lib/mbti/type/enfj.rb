@@ -4,7 +4,11 @@ module Mbti
 
   class Type
 
-    class Enfj
+    class Enfj < Type
+
+      def initialize
+        super :e, :n, :f, :j
+      end
 
     end
 

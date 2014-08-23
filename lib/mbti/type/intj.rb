@@ -4,7 +4,11 @@ module Mbti
 
   class Type
 
-    class Intj
+    class Intj < Type
+
+      def initialize
+        super :i, :n, :f, :p
+      end
 
     end
 

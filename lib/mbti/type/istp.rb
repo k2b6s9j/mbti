@@ -4,7 +4,11 @@ module Mbti
 
   class Type
 
-    class Istp
+    class Istp < Type
+
+      def initialize
+        super :i, :s, :t, :p
+      end
 
     end
 

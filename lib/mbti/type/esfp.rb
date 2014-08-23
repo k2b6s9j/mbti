@@ -4,7 +4,11 @@ module Mbti
 
   class Type
 
-    class Esfp
+    class Esfp < Type
+
+      def initialize
+        super :e, :s, :f, :p
+      end
 
     end
 
