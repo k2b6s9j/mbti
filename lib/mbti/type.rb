@@ -1,3 +1,7 @@
+Dir[File.dirname(__FILE__) + '/type/**/*.rb'].each do |file|
+  load file
+end
+
 module Mbti
 
   # An instance of this class will provide proper representation of a single Myers-Briggs personality type.
