@@ -7,27 +7,27 @@ build:
     steps:
         #Install all the rubies to be tested against.
         - script:
-            name: install ruby: MRI 2.1.0
+            name: install MRI 2.1.0
             code: rvm install ruby-2.1.2
             
         - script:
-            name: install ruby: MRI 1.9.3
+            name: install MRI 1.9.3
             code: rvm install ruby-1.9.3
             
         - script:
-            name: install ruby: JRuby 1.7.14
+            name: install JRuby 1.7.14
             code: rvm install jruby-1.7.14 --1.9
             
         - script:
-            name: install ruby: Rubinius 2.2.10
+            name: install Rubinius 2.2.10
             code: rvm install rbx-2.2.10
             
         #- script:
-        #    name: install ruby: Opal
+        #    name: install Opal
         #    code: rvm install opal
             
         #- script:
-        #    name: install ruby: MRuby
+        #    name: install MRuby
         #    code : |
         #        rvm install mruby
         #        rvm mruby do gem install bundler
