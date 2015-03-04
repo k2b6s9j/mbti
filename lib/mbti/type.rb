@@ -24,16 +24,8 @@ module Mbti
     #
     # @return [Mbti::Type] the instance of {Mbti::Type} created
     def initialize(attitude, perceiving_function, judging_function, lifestyle)
-      case attitude
-        when(attitude.is_a? Numeric)
-          @attitude = attitude
-        when(attitude == :introvert || :i)
-          @attitude = 1
-        when(attitude == :extrovert || :e)
-          @attitude = -1
-        else
-          raise StandardError, "Improper Attitude Trait Parameter: #{attitude}"
-      end
+
+      @attitude = attitude(attitude)
 
       case perceiving_function
         when(perceiving_function.is_a? Numeric)
@@ -162,6 +154,19 @@ module Mbti
     end
 
     # @!endgroup
+
+    private
+
+    def attitude(value)
+      if value.is_a? Numeric
+        value
+      elsif value == :introvert || :i
+        1
+      elsif value == :extrovert || :e
+        -1
+      else
+        raise StandardError, "Improper Attitude Trait Parameter: #{value}"
+    end
 
   end
 
