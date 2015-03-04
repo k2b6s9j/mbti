@@ -5,3 +5,6 @@ gemspec
 
 # Coveralls
 gem 'coveralls', require: false
+
+# CodeClimate
+gem "codeclimate-test-reporter", group: :test, require: nil

@@ -35,3 +35,6 @@ matrix:
     - jdk:
       - oraclejdk8
   fast_finish: true
+addons:
+  code_climate:
+    repo_token: e5bf62fa6e2a868829d82468e9a5e425c174c7534bb3c4e681bfb9daf836c8e8
