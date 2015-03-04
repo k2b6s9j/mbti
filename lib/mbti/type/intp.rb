@@ -1,4 +1,4 @@
-require_relative '../type'
+require 'mbti/type'
 
 module Mbti
 

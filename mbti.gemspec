@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Mbti::VERSION
   spec.authors       = ['Kepler Sticka-Jones']
   spec.email         = ['kbsj269@gmail.com']
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = 'Small gem allowing for easy representation of the Myers-Briggs Type Indicator'
+  spec.description   = 'This gem allows projects to quickly and efficently reference the different Myers-Briggs Type Indications using a handy Object-Oriented model.'
   spec.homepage      = ''
   spec.license       = 'GNU Public License Version 2'
 

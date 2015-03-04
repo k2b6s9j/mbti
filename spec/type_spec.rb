@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'mbti/type'
 
 describe Mbti::Type do
 

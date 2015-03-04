@@ -1,12 +1,8 @@
-Dir[File.dirname(__FILE__) + '/type/**/*.rb'].each do |file|
-  load file
-end
-
 module Mbti
 
   # An instance of this class will provide proper representation of a single Myers-Briggs personality type.
   class Type
-    
+
     # @!attribute attitude
     #   @return [Integer] representation of the attitude trait of the type
     # @!attribute perceiving_function
@@ -16,7 +12,7 @@ module Mbti
     # @!attribute lifestyle
     #   @return [Integer] representation of the lifestyle trait of the type
     attr_accessor :attitude, :perceiving_function, :judging_function, :lifestyle
-    
+
     # Creates an instance of the Type class
     #
     # @param [Numeric, Symbol] attitude The scale representing the attitude trait of the type.
@@ -89,12 +85,12 @@ module Mbti
         else
           raise StandardError, "Improper Lifestyle Trait Parameter: #{lifestyle}"
       end
-      
+
       self
     end
-    
+
     # @!group Type Trait Detection Methods
-    
+
     # Checks if the type will have the extraverted trait.
     #
     # @return [boolean] if the trait is extraverted
@@ -105,7 +101,7 @@ module Mbti
         false
       end
     end
-    
+
     # Checks if the type will have the introverted trait.
     #
     # @return [boolean] if the trait is introverted
@@ -116,7 +112,7 @@ module Mbti
         false
       end
     end
-    
+
     # Checks if the type will have the intuitive trait.
     #
     # @return [boolean] if the trait is intuitive
@@ -127,7 +123,7 @@ module Mbti
         false
       end
     end
-    
+
     # Checks if the type will have the observant trait.
     #
     # @return [boolean] if the trait is observant
@@ -138,7 +134,7 @@ module Mbti
         false
       end
     end
-    
+
     # Checks if the type will have the thinking trait.
     #
     # @return [boolean] if the trait is thinking
@@ -149,7 +145,7 @@ module Mbti
         false
       end
     end
-    
+
     # Checks if the type will have the feeling trait.
     #
     # @return [boolean] if the trait is feeling
@@ -160,7 +156,7 @@ module Mbti
         false
       end
     end
-    
+
     # Checks if the type will have the judging trait.
     #
     # @return [boolean] if the trait is judging
@@ -171,7 +167,7 @@ module Mbti
         false
       end
     end
-    
+
     # Checks if the type will have the perceiving trait.
     #
     # @return [boolean] if the trait is perceiving
@@ -182,7 +178,7 @@ module Mbti
         false
       end
     end
-    
+
     # @!endgroup
 
   end
