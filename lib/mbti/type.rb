@@ -27,13 +27,9 @@ module Mbti
       case attitude
         when(attitude.is_a? Numeric)
           @attitude = attitude
-        when(attitude == :introvert)
+        when(attitude == :introvert || :i)
           @attitude = 1
-        when(attitude == :i)
-          @attitude = 1
-        when(attitude == :extrovert)
-          @attitude = -1
-        when(attitude == :e)
+        when(attitude == :extrovert || :e)
           @attitude = -1
         else
           raise StandardError, "Improper Attitude Trait Parameter: #{attitude}"
@@ -42,15 +38,9 @@ module Mbti
       case perceiving_function
         when(perceiving_function.is_a? Numeric)
           @perceiving_function = perceiving_function
-        when(perceiving_function == :intuitive)
+        when(perceiving_function == :intuitive || :n)
           @perceiving_function = -1
-        when(perceiving_function == :n)
-          @perceiving_function = -1
-        when(perceiving_function == :observant)
-          @perceiving_function = 1
-        when(perceiving_function == :observing)
-          @perceiving_function = 1
-        when(perceiving_function == :s)
+        when(perceiving_function == :observant || :observing || :s)
           @perceiving_function = 1
         else
           raise StandardError, "Improper Perceiving Function Trait Parameter: #{perceiving_function}"
@@ -59,13 +49,9 @@ module Mbti
       case judging_function
         when(judging_function.is_a? Numeric)
           @judging_function = judging_function
-        when(judging_function == :thinking)
+        when(judging_function == :thinking || :t)
           @judging_function = -1
-        when(judging_function == :t)
-          @judging_function = -1
-        when(judging_function == :feeling)
-          @judging_function = 1
-        when(judging_function == :f)
+        when(judging_function == :feeling || :f)
           @judging_function = 1
         else
           raise StandardError, "Improper Judging Function Trait Parameter: #{judging_function}"
@@ -74,13 +60,9 @@ module Mbti
       case lifestyle
         when(lifestyle.is_a? Numeric)
           @lifestyle = lifestyle
-        when(lifestyle == :judging)
+        when(lifestyle == :judging || :j)
           @lifestyle = -1
-        when(lifestyle == :j)
-          @lifestyle = -1
-        when(lifestyle == :perceiving)
-          @lifestyle = 1
-        when(lifestyle == :p)
+        when(lifestyle == :perceiving || :p)
           @lifestyle = 1
         else
           raise StandardError, "Improper Lifestyle Trait Parameter: #{lifestyle}"
